@@ -140,3 +140,7 @@ a {
 .buttonHover:hover{
     background-color: #F5AF19;
 }
+
+.objectFitContain{
+    object-fit: contain;
+}
