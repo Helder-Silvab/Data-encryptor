@@ -1,0 +1,41 @@
+.logo{
+    background-image: url(../assets/Logo.svg);
+    background-size: 150px 60px;
+    background-repeat: no-repeat;
+}
+
+.icon-profile{
+    background-image: url(../assets/../assets/icon_profile.png);
+}
+
+.icon-data-card{
+    background-image:  url(../assets/data_card.png);
+}
+
+.icon-file-card{
+    background-image:  url(../assets/file_card.svg);
+}
+
+.icon-img-card{
+    background-image:  url(../assets/img_card.svg);
+}
+
+.arrow-white-right{
+    background-image:  url(../assets/arrow_white_right.svg);
+}
+
+.arrow-yellow-down{
+    background-image:  url(../assets/arrow_yellow_down.svg);
+}
+
+.icon-data{
+    background-image:  url(../assets/data.svg);
+}
+
+.icon-file{
+    background-image:  url(../assets/file.svg);
+}
+
+.icon-img{
+    background-image:  url(../assets/img.svg);
+}

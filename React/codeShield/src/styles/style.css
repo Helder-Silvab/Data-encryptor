@@ -1,0 +1,142 @@
+body{
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    overflow: hidden;
+    margin: 0px;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: lighter;
+}
+
+
+
+.colorWhite{
+    background-color: #FFFFFF;
+}
+
+.colorBackground{
+    background-color: #272727;
+}
+
+.colorRed{
+    background-color: #F12711;
+}
+
+.colorAzulEscuro{
+    background-color: #323443;
+}
+
+.labelColorGray{
+    color: #EFEDE8;
+}
+
+.labelColorWhite{
+    color: #FFFFFF;
+}
+
+.labelColorRed{
+    color: #F12711;
+}
+
+.labelColorYellow{
+    color:#F5AF19;
+}
+
+.labelColorGradient{
+    background: -webkit-linear-gradient(275deg, #F12711, #F5AF19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.label-size-12{
+    font-size: 12px;
+}
+.label-size-14{
+    font-size: 14px;
+}
+.label-size-16{
+    font-size: 16px;
+}
+.label-size-18{
+    font-size: 18px;
+}
+.label-size-40{
+    font-size: 40px;
+}
+.label-weight-normal{
+    font-weight: normal;
+}
+.label-weight-bold{
+    font-weight: bold;
+}
+
+.top-menu-holder{
+    position: relative;
+    z-index: 700;
+    height: 80px;
+}
+
+.border-bottom-header{
+    border-bottom: solid #4D4D4D 2px;
+}
+
+.border-top-footer{
+    border-top: solid #4D4D4D 2px;
+}
+
+.borderWhite{
+    border: 1px solid #FFFFFF;
+}
+
+.content{
+    width: 100%;
+}
+
+.card-image{
+    left: 100px;
+    top: -40px;
+}
+
+.bottom0{
+    bottom: 0;
+}
+
+.hover-label:hover{
+    font-weight: normal;
+}
+
+a {
+    all: unset;
+}
+
+.inputText{
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.inputText:focus-visible{
+    outline: none;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.dropdown:hover{
+    display: block;
+}
+
+.dropdownHover:hover .dropdown{
+    display: block;
+}
+
+.buttonHover:hover{
+    background-color: #F5AF19;
+}
