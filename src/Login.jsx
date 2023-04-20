@@ -1,3 +1,4 @@
+import { SignInButton } from "@clerk/clerk-react"
 import React from "react"
 import { Link } from "react-router-dom"
 
@@ -36,9 +37,11 @@ function Login() {
               <div className="grid-1-1 grid-flex margin-top-30">
                 <div className="grid-flex-grow"></div>
                 <div className="width300 display-flex colorWhite height30 borderWhite border-radius-15 padding10 cursor-pointer">
+                  <SignInButton>
                   <div className="grid-flex-grow height30 labelColorBlack label-size-16 label-weight-normal">
                     Continuar com GitHub
                   </div>
+                  </SignInButton>
                   <div className="icon-github icon-align-center icon-size-20 width30 height30"></div>
                 </div>
                 <div className="grid-flex-grow"></div>

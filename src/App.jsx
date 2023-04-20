@@ -1,46 +1,11 @@
+import { TopPage } from "./components/TopPage"
+import { BottomPage } from "./components/BottomPage"
 import { Link } from "react-router-dom"
 
 function App() {
   return (
     <div className="grid-1-1 height-100vh grid-flex-column overflow-x-hidden overflow-y-hidden colorBackground">
-      <div className="top-menu-holder">
-        <div className="grid-1-1 height50 padding-left-50 padding-right-50">
-          <div className="grid-1-1 grid-flex height80 border-bottom-header">
-            <Link to="/">
-              <div className="logo width150 height-100-percent icon-align-center cursor-pointer"></div>
-            </Link>
-            <div className="grid-flex-grow"></div>
-            <div className="display-flex">
-              <div className="width60 labelColorWhite label-size-16 margin-right-20 label-weight-normal hover-label cursor-pointer">
-                <Link to="/">Home</Link>
-              </div>
-              <div className="width80 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">
-                <Link to="encriptar">Encriptar</Link>
-              </div>
-              <div className="width100 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">
-                Desencriptar
-              </div>
-              <div className="dropdownHover-profile">
-                <div className="width40 icon-profile height80 icon-size-30 icon-align-center cursor-pointer"></div>
-                <div className="dropdown-profile">
-                  <div className="width150 height100 height-reset colorAzulEscuro padding10 border-radius-15">
-                    <Link to="/login">
-                      <div className="grid-1-1 height50 labelColorWhite label-size-16 label-weight-normal cursor-pointer">
-                        Login
-                      </div>
-                    </Link>
-                    <Link to="/signUp">
-                      <div className="grid-1-1 height50 labelColorWhite label-size-16 label-weight-normal cursor-pointer">
-                        Criar Conta
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TopPage />
       <div className="grid-flex-grow display-flex overflow-auto">
         <div className="content over-flow-auto padding-left-50 padding-right-50">
           <div className="grid-1-1 grid-flex margin-top-80">
@@ -101,33 +66,11 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="width40 height180 icon-size-40 icon-align-center arrow-white-right margin-right-20"></div>
+            <Link to="encriptar"><div className="width40 height180 icon-size-40 icon-align-center arrow-white-right margin-right-20 cursor-pointer"></div></Link>
           </div>
         </div>
       </div>
-      <div className="position-absolute bottom0 height100 height-reset width-100-percent">
-        <div className="grid-1-1">
-          <div className="grid-1-2 height-100-percent margin-auto">
-            <div className="grid-1-1 grid-flex border-top-footer">
-              <div className="grid-1-1 grid-flex margin-top-20">
-                <div className="grid-flex-grow"></div>
-                <div className="display-flex">
-                  <div className="width60 labelColorWhite label-size-16 margin-right-20 label-weight-normal hover-label cursor-pointer">
-                    <Link to="/">Home</Link>
-                  </div>
-                  <div className="width80 labelColorWhite label-size-16 margin-right-20 hover-labe cursor-pointerl">
-                    <Link to="/encriptar">Encriptar</Link>
-                  </div>
-                  <div className="width100 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">
-                    Desencriptar
-                  </div>
-                </div>
-                <div className="grid-flex-grow"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BottomPage />
     </div>
   )
 }

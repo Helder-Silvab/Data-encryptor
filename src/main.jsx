@@ -6,6 +6,7 @@ import App from "./App"
 import Encriptar from "./Encriptar"
 import Login from "./Login"
 import SignUp from "./SignUp"
+import { ConfirmEncrypt } from "./components/ConfirmEncrypt"
 import "./styles/base.css"
 import "./styles/icons.css"
 import "./styles/style.css"
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/signUp",
     element: <SignUp />
+  },
+  {
+    path: "/confirmEncrypt",
+    element: <ConfirmEncrypt />
   }
 ])
 
