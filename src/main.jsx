@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import Encriptar from "./Encriptar"
 import Login from "./Login"
+import SignUp from "./SignUp"
 import "./styles/base.css"
 import "./styles/icons.css"
 import "./styles/style.css"
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "login",
     element: <Login />
+  },
+  {
+    path: "signUp",
+    element: <SignUp />
   },
 ]);
 

@@ -21,12 +21,29 @@ body{
     background-color: #272727;
 }
 
+.colorBackgroundLogin{
+    background-color: #333333;
+}
+
+
 .colorRed{
     background-color: #F12711;
 }
 
 .colorAzulEscuro{
     background-color: #323443;
+}
+
+.colorYellow{
+    background-color: #F5AF19;
+}
+
+.colorGradient{
+    background: -webkit-linear-gradient(140deg, #F12711, #F5AF19);
+}
+
+.labelColorBlack{
+    color: #000000;
 }
 
 .labelColorGray{
@@ -91,6 +108,11 @@ body{
     border: 1px solid #FFFFFF;
 }
 
+.border-left-radius-50{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
 .content{
     width: 100%;
 }
@@ -143,4 +165,26 @@ a {
 
 .objectFitContain{
     object-fit: contain;
+}
+
+.dropdown-profile{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    right: 0px;
+    top: 55px;
+}
+
+.dropdown-profile:hover{
+    display: block;
+}
+
+.dropdownHover-profile:hover .dropdown-profile{
+    display: block;
+}
+
+.loginSquare{
+    margin-top: 50px;
+    z-index: 999;
+    box-shadow: 5px 5px 5px 5px #1b1b1b60;
 }

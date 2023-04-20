@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
 }
 
+.logoBig{
+    background-image: url(../assets/LogoBig.svg);
+}
+
 .icon-profile{
     background-image: url(../assets/../assets/icon_profile.png);
 }
@@ -39,3 +43,16 @@
 .icon-img{
     background-image:  url(../assets/img.svg);
 }
+
+.loginBackground{
+    background-image:  url(../assets/loginBackground.svg);
+}
+
+.icon-google{
+    background-image:  url(../assets/google.svg);
+}
+
+.icon-github{
+    background-image:  url(../assets/gitHub.svg);
+}
+

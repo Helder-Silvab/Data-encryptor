@@ -8,30 +8,27 @@ function Encriptar(){
         <div className="top-menu-holder">
             <div className="grid-1-1 height50 padding-left-50 padding-right-50">
                 <div className="grid-1-1 grid-flex height80 border-bottom-header">
-                    <div className="logo width150 height-100-percent icon-align-center"></div>
+                    <a href="/"><div className="logo width150 height-100-percent icon-align-center cursor-pointer"></div></a>
                     <div className="grid-flex-grow"></div>
                     <div className="display-flex">
                         <div className="width60 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer"><a href="/">Home</a></div>
                         <div className="width80 labelColorWhite label-size-16 margin-right-20 label-weight-normal hover-label cursor-pointer"><a href="encriptar">Encriptar</a></div>
                         <div className="width100 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">Desencriptar</div>
-                        <div className="width40 icon-profile icon-size-30 icon-align-center cursor-pointer"></div>
+                        <div className="dropdownHover-profile">
+                            <div className="width40 icon-profile height80 icon-size-30 icon-align-center cursor-pointer"></div>
+                            <div className="dropdown-profile">
+                                <div className="width150 height100 height-reset colorAzulEscuro padding10 border-radius-15">
+                                    <a href="login"><div className="grid-1-1 height50 labelColorWhite label-size-16 label-weight-normal cursor-pointer">Login</div></a>
+                                    <a href="signUp"><div className="grid-1-1 height50 labelColorWhite label-size-16 label-weight-normal cursor-pointer">Criar Conta</div></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div className="grid-flex-grow display-flex overflow-auto">
             <div className="content over-flow-auto padding-left-50 padding-right-50">
-               {/*<div className="grid-1-1">
-                    <div className="labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">Texto</div>
-                    <input type="text" name="msg" id="msg">
-                    <div className="labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">encriptado</div>
-                    <input type="text" name="result" id="result">
-                    <div className="labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">Desencriptado</div>
-                    <input type="text" name="resultde" id="resultde">
-                    <div className="labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer" onclick="encrpyt()">encriptar</div>
-                    <div className="labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer" onclick="decrpyt()">desencriptar</div>
-    </div> */}
-
                 <div className="grid-1-1 margin-top-50">
                     <div className="width300 dropdownHover">
                         <div className="width300 display-flex height30 borderWhite border-radius-15 padding10 cursor-pointer">
