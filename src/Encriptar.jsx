@@ -58,7 +58,7 @@ function Encriptar() {
               <EncryptData encrypted={encrypted} setEncrypted={setEncrypted} />
             )}
             {activeItem === "Ficheiro" && (
-              <EncryptFile />
+              <EncryptFile encrypted={encrypted} setEncrypted={setEncrypted} />
             )}
             {activeItem === "Imagem" && (
               <EncryptImg encrypted={encrypted} setEncrypted={setEncrypted} />

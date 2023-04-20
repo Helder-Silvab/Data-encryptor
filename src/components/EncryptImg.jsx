@@ -1,6 +1,5 @@
 import CryptoJS from "crypto-js";
 import { useState } from "react";
-import { ConfirmEncrypt } from "./ConfirmEncrypt";
 
 export function EncryptImg({encrypted, setEncrypted}){
     const [imagePreview, setImagePreview] = useState("")
@@ -39,8 +38,8 @@ export function EncryptImg({encrypted, setEncrypted}){
                     <div className="width300 height20 border-radius-15 colorRed padding10 margin-top-20 buttonHover">
                       <div className="labelColorWhite label-size-16 label-weight-normal align-center">Carregar Imagem</div>
                     </div>
-                    <div className="width350 height20 labelColorWhite label-size-12 label-weight-normal">{" "}PNG , JPG, JPFG </div>
-                    <input type="file" id="img-input"
+                    <div className="width350 height20 labelColorWhite label-size-12 label-weight-normal">{" "}PNG , JPG </div>
+                    <input type="file" id="img-input" accept=".png, .jpg"
                       onChange={(e) => {
                         const file = e.target.files[0];
                         setImage(file);
