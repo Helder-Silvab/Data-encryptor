@@ -22,6 +22,7 @@ export function EncryptFile({encrypted, setEncrypted}){
         const encrypted = ciphertext.toString();
     
         setEncrypted(encrypted)
+        
     }
 
     return(

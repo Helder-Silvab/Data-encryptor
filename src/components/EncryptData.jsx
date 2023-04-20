@@ -1,11 +1,13 @@
 import CryptoJS from "crypto-js";
-export function EncryptData({encrypted, setEncrypted}){
+export function EncryptData({encrypted, setEncrypted, iv, setIv, key, setKey}){
 
     function encrypt(){
         //definir as chaves
         const key = CryptoJS.enc.Hex.parse('0123456789abcdef0123456789abcdef');
         const iv = CryptoJS.enc.Hex.parse('abcdef9876543210abcdef9876543210');
 
+        setIv(iv)
+        setKey(key)
         //obter o texto escrito
         const clientMsg = document.getElementById("msg").value;
         const plaintext = clientMsg;

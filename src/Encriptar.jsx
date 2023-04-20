@@ -10,7 +10,9 @@ import { ConfirmEncrypt } from "./components/ConfirmEncrypt"
 function Encriptar() {
   const [activeItem, setActiveItem] = useState("")
   const [encrypted, setEncrypted] = useState()
-  return encrypted ? <ConfirmEncrypt encrypted={encrypted} />:(
+  const [iv, setIv] = useState()
+  const [key, setKey] = useState()
+  return encrypted ? <ConfirmEncrypt encrypted={encrypted} ivKey={iv} publicKey={key} />:(
     <div className="grid-1-1 height-100vh grid-flex-column overflow-x-hidden overflow-y-hidden colorBackground">
       <TopPage />
       <div className="grid-flex-grow display-flex overflow-auto">
@@ -55,7 +57,7 @@ function Encriptar() {
               </div>
             </div>
             {activeItem === "Dados" && (
-              <EncryptData encrypted={encrypted} setEncrypted={setEncrypted} />
+              <EncryptData encrypted={encrypted} setEncrypted={setEncrypted} ivKey={iv} setIv={setIv} publicKey={key} setKey={setKey} />
             )}
             {activeItem === "Ficheiro" && (
               <EncryptFile encrypted={encrypted} setEncrypted={setEncrypted} />
