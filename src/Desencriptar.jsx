@@ -1,19 +1,13 @@
-import { useState } from "react";
 import { TopPage } from "./components/TopPage";
 import { BottomPage } from "./components/BottomPage";
-import { EncryptData } from "./components/encrypt/EncryptData";
-import { EncryptFile } from "./components/encrypt/EncryptFile";
-import { EncryptImg } from "./components/encrypt/EncryptImg";
-import { ConfirmEncrypt } from "./components/encrypt/ConfirmEncrypt";
+import { useState } from "react";
+import { DecryptData } from "./components/decrypt/DecryptData";
+import { DecryptFile } from "./components/decrypt/DecryptFile";
+import { DecryptImg } from "./components/decrypt/DecryptImg";
 
-function Encriptar() {
+function Desencriptar() {
   const [activeItem, setActiveItem] = useState("");
-  const [encrypted, setEncrypted] = useState();
-  const [iv, setIv] = useState();
-  const [key, setKey] = useState();
-  return encrypted ? (
-    <ConfirmEncrypt encrypted={encrypted} ivKey={iv} publicKey={key} />
-  ) : (
+  return (
     <div className="grid-1-1 height-100vh grid-flex-column overflow-x-hidden overflow-y-hidden colorBackground">
       <TopPage />
       <div className="grid-flex-grow display-flex overflow-auto">
@@ -57,36 +51,9 @@ function Encriptar() {
                 </div>
               </div>
             </div>
-            {activeItem === "Dados" && (
-              <EncryptData
-                encrypted={encrypted}
-                setEncrypted={setEncrypted}
-                ivKey={iv}
-                setIv={setIv}
-                publicKey={key}
-                setKey={setKey}
-              />
-            )}
-            {activeItem === "Ficheiro" && (
-              <EncryptFile
-                encrypted={encrypted}
-                setEncrypted={setEncrypted}
-                ivKey={iv}
-                setIv={setIv}
-                publicKey={key}
-                setKey={setKey}
-              />
-            )}
-            {activeItem === "Imagem" && (
-              <EncryptImg
-                encrypted={encrypted}
-                setEncrypted={setEncrypted}
-                ivKey={iv}
-                setIv={setIv}
-                publicKey={key}
-                setKey={setKey}
-              />
-            )}
+            {activeItem === "Dados" && <DecryptData />}
+            {activeItem === "Ficheiro" && <DecryptFile />}
+            {activeItem === "Imagem" && <DecryptImg />}
           </div>
         </div>
       </div>
@@ -95,4 +62,4 @@ function Encriptar() {
   );
 }
 
-export default Encriptar;
+export default Desencriptar;

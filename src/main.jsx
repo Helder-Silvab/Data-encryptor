@@ -1,38 +1,43 @@
-import { ClerkProvider } from "@clerk/clerk-react"
-import React from "react"
-import { createRoot } from "react-dom/client"
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import App from "./App"
-import Encriptar from "./Encriptar"
-import Login from "./Login"
-import SignUp from "./SignUp"
-import { ConfirmEncrypt } from "./components/ConfirmEncrypt"
-import "./styles/base.css"
-import "./styles/icons.css"
-import "./styles/style.css"
+import { ClerkProvider } from "@clerk/clerk-react";
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App";
+import Encriptar from "./Encriptar";
+import Login from "./Login";
+import SignUp from "./SignUp";
+import Desencriptar from "./Desencriptar";
+import { ConfirmEncrypt } from "./components/encrypt/ConfirmEncrypt";
+import "./styles/base.css";
+import "./styles/icons.css";
+import "./styles/style.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
   },
   {
     path: "/encriptar",
-    element: <Encriptar />
+    element: <Encriptar />,
   },
   {
     path: "/login",
-    element: <Login />
+    element: <Login />,
   },
   {
     path: "/signUp",
-    element: <SignUp />
+    element: <SignUp />,
   },
   {
     path: "/confirmEncrypt",
-    element: <ConfirmEncrypt />
-  }
-])
+    element: <ConfirmEncrypt />,
+  },
+  {
+    path: "/desencriptar",
+    element: <Desencriptar />,
+  },
+]);
 
 createRoot(document.getElementById("root")).render(
   <ClerkProvider
@@ -41,4 +46,4 @@ createRoot(document.getElementById("root")).render(
     }>
     <RouterProvider router={router} />
   </ClerkProvider>
-)
+);
