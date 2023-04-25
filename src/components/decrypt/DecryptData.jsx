@@ -2,17 +2,16 @@ import CryptoJS from "crypto-js";
 
 export function DecryptData() {
   function decrypt() {
-    var ciphertext = document.getElementById("cipherText").value;
-    var key = document.getElementById("key").value;
-    var iv = document.getElementById("IVkey").value;
-    var ivWordArray = CryptoJS.enc.Utf8.parse(iv);
+    const key = CryptoJS.enc.Hex.parse(document.getElementById("key").value);
+    const iv = CryptoJS.enc.Hex.parse(document.getElementById("IVkey").value);
 
-    console.log(ciphertext);
-    console.log(key);
-    console.log(ivWordArray);
+    const ciphertext = document.getElementById("cipherText").value;
 
-    var decrypted = CryptoJS.AES.decrypt(ciphertext, key, { iv: ivWordArray });
-    var plaintext = decrypted.toString(CryptoJS.enc.Utf8);
+    const bytes = CryptoJS.AES.decrypt(ciphertext, key, {
+      iv: iv,
+    });
+
+    const plaintext = bytes.toString(CryptoJS.enc.Utf8);
 
     console.log(plaintext);
   }
