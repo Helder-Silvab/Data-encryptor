@@ -4,10 +4,14 @@ import { useState } from "react";
 import { DecryptData } from "./components/decrypt/DecryptData";
 import { DecryptFile } from "./components/decrypt/DecryptFile";
 import { DecryptImg } from "./components/decrypt/DecryptImg";
+import { ConfirmDecrypt } from "./components/decrypt/ConfirmDecrypt";
 
 function Desencriptar() {
   const [activeItem, setActiveItem] = useState("");
-  return (
+  const [decrypted, setDecrypted] = useState();
+  return decrypted ? (
+    <ConfirmDecrypt decrypted={decrypted} />
+  ) : (
     <div className="grid-1-1 height-100vh grid-flex-column overflow-x-hidden overflow-y-hidden colorBackground">
       <TopPage />
       <div className="grid-flex-grow display-flex overflow-auto">
@@ -51,9 +55,15 @@ function Desencriptar() {
                 </div>
               </div>
             </div>
-            {activeItem === "Dados" && <DecryptData />}
-            {activeItem === "Ficheiro" && <DecryptFile />}
-            {activeItem === "Imagem" && <DecryptImg />}
+            {activeItem === "Dados" && (
+              <DecryptData decrypted={decrypted} setDecrypted={setDecrypted} />
+            )}
+            {activeItem === "Ficheiro" && (
+              <DecryptFile decrypted={decrypted} setDecrypted={setDecrypted} />
+            )}
+            {activeItem === "Imagem" && (
+              <DecryptImg decrypted={decrypted} setDecrypted={setDecrypted} />
+            )}
           </div>
         </div>
       </div>

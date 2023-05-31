@@ -1,6 +1,6 @@
 import CryptoJS from "crypto-js";
 
-export function DecryptData() {
+export function DecryptData({ decrypted, setDecrypted }) {
   function decrypt() {
     const key = CryptoJS.enc.Hex.parse(document.getElementById("key").value);
     const iv = CryptoJS.enc.Hex.parse(document.getElementById("IVkey").value);
@@ -11,9 +11,9 @@ export function DecryptData() {
       iv: iv,
     });
 
-    const plaintext = bytes.toString(CryptoJS.enc.Utf8);
+    const decrypted = bytes.toString(CryptoJS.enc.Utf8);
 
-    console.log(plaintext);
+    setDecrypted(decrypted);
   }
 
   return (

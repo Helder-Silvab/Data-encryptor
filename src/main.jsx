@@ -8,6 +8,7 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import Desencriptar from "./Desencriptar";
 import { ConfirmEncrypt } from "./components/encrypt/ConfirmEncrypt";
+import { ConfirmDecrypt } from "./components/decrypt/ConfirmDecrypt";
 import "./styles/base.css";
 import "./styles/icons.css";
 import "./styles/style.css";
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/confirmEncrypt",
     element: <ConfirmEncrypt />,
+  },
+  {
+    path: "/confirmDecrypt",
+    element: <ConfirmDecrypt />,
   },
   {
     path: "/desencriptar",

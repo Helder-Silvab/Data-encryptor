@@ -16,7 +16,7 @@ export function EncryptImg({
     fileReader.readAsBinaryString(image);
 
     fileReader.onload = function () {
-      //criar uma padded binary string e preencher com 0 ate atingir 16 (tamanho necessario para o AES)
+      
       let binaryStr = this.result;
       const paddingLength = 16 - (binaryStr.length % 16);
       binaryStr += "\0".repeat(paddingLength);
@@ -27,13 +27,12 @@ export function EncryptImg({
 
       setIv(iv);
       setKey(key);
-      //ciptograficar a string binaria com as chaves
+     
       const ciphertext = CryptoJS.AES.encrypt(binaryStr, key, {
         iv: iv,
         padding: CryptoJS.pad.NoPadding,
       });
 
-      //converter a string ciptografada em uma string codificada em base64
       const encryptedImage = CryptoJS.enc.Base64.stringify(
         CryptoJS.enc.Hex.parse(ciphertext.ciphertext.toString())
       );

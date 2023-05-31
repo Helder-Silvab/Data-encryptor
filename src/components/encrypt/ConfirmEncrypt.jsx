@@ -2,6 +2,36 @@ import { BottomPage } from "../BottomPage";
 import { TopPage } from "../TopPage";
 
 export function ConfirmEncrypt({ encrypted, ivKey, publicKey }) {
+  function downloadFile() {
+    var data =
+      "Texto encriptado: " +
+      encrypted +
+      "\n" +
+      "Chave IV: " +
+      ivKey +
+      "\n" +
+      "Chave Publica: " +
+      publicKey +
+      "\n";
+
+    // Criar um elemento de link temporário
+    var link = document.createElement("a");
+    link.setAttribute(
+      "href",
+      "data:text/plain;charset=utf-8," + encodeURIComponent(data)
+    );
+    link.setAttribute("download", "Encriptacao.txt");
+    link.style.display = "none";
+
+    // Adicionar o link ao corpo do documento
+    document.body.appendChild(link);
+
+    // Simular o clique no link
+    link.click();
+
+    // Remover o link do corpo do documento
+    document.body.removeChild(link);
+  }
   return (
     <div className="grid-1-1 height-100vh grid-flex-column overflow-x-hidden overflow-y-hidden colorBackground">
       <TopPage />
@@ -54,6 +84,13 @@ export function ConfirmEncrypt({ encrypted, ivKey, publicKey }) {
                 className="grid-1-1 border-none height-100-percent inputText resize-none labelColorWhite"
                 placeholder="O seu documento"
                 value={publicKey}></textarea>
+            </div>
+            <div
+              className="width300 height20 border-radius-15 colorRed padding10 margin-top-20 buttonHover"
+              onClick={downloadFile}>
+              <div className="labelColorWhite label-size-16 label-weight-normal align-center">
+                Download ficheiro TXT
+              </div>
             </div>
           </div>
         </div>

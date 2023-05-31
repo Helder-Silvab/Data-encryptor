@@ -1,34 +1,7 @@
 import CryptoJS from "crypto-js";
 
 export function DecryptImg() {
-  function decrypt() {
-    // convert the base64 string back to a CryptoJS WordArray
-    const encryptedImage = document.getElementById("cipherText").value;
-    const ciphertext = CryptoJS.enc.Base64.parse(encryptedImage);
-
-    // define the key and IV
-    const key = CryptoJS.enc.Hex.parse("0123456789abcdef0123456789abcdef");
-    const iv = CryptoJS.enc.Hex.parse("abcdef9876543210abcdef9876543210");
-
-    // decrypt the ciphertext using AES
-    const decrypted = CryptoJS.AES.decrypt({ ciphertext }, key, {
-      iv,
-      padding: CryptoJS.pad.NoPadding,
-    });
-
-    // remove any padding added during encryption
-    const binaryStr = decrypted
-      .toString(CryptoJS.enc.Utf8)
-      .replace(/\0+$/g, "");
-
-    // create a blob from the binary string
-    const blob = new Blob([binaryStr], { type: image.type });
-
-    // create an object URL from the blob
-    const imageUrl = URL.createObjectURL(blob);
-
-    document.getElementById("preview").src = imageUrl;
-  }
+  function decrypt() {}
   return (
     <div id="imagem">
       <img
