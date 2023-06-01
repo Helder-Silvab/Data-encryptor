@@ -41,9 +41,7 @@ export function ConfirmEncrypt({ encrypted, ivKey, publicKey }) {
             <div className="grid-1-1 grid-flex">
               <div className="icon-confirm icon-size-60 width60 height60 icon-align-center"></div>
               <div className="grid-flex-grow labelColorWhite label-size-16 height60 label-weight-normal">
-                Dados encriptados com sucesso, aceda ao seu email para fazer
-                download do TXT com o texto encriptados ou copie todos os dados
-                abaixo indicados
+                Dados encriptados com sucesso
               </div>
             </div>
             <div className="grid-1-1 labelColorWhite label-size-16 margin-top-20">
