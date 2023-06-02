@@ -4,11 +4,6 @@ export function DecryptImg() {
   function decrypt() {}
   return (
     <div id="imagem">
-      <img
-        id="preview"
-        src="#"
-        className="grid-1-1 height300 objectFitContain padding10 border-none"
-      />
       <div className="grid-1-1 labelColorWhite label-size-16 margin-top-10">
         Coloque a chave IV
       </div>
