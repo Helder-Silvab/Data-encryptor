@@ -22,7 +22,7 @@ function Desencriptar() {
                 <div
                   id="selectText"
                   className="grid-flex-grow height30 labelColorGray label-size-16">
-                  {!!activeItem ? activeItem : "Escolha a opção"}
+                  {!!activeItem ? activeItem : "Choose the option"}
                 </div>
                 <div className="arrow-yellow-down icon-align-center icon-size-20 width30 height30"></div>
               </div>
