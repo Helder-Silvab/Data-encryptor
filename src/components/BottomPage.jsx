@@ -13,10 +13,10 @@ export function BottomPage(){
                     <Link to="/">Home</Link>
                   </div>
                   <div className="width80 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">
-                    <Link to="/encriptar">Encriptar</Link>
+                    <Link to="/encriptar">Encrypt</Link>
                   </div>
                   <div className="width100 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">
-                    Desencriptar
+                    Decrypt
                   </div>
                 </div>
                 <div className="grid-flex-grow"></div>
