@@ -14,10 +14,10 @@ export function TopPage() {
               <Link to="/">Home</Link>
             </div>
             <div className="width80 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">
-              <Link to="/encriptar">Encriptar</Link>
+              <Link to="/encriptar">Encrypt</Link>
             </div>
             <div className="width100 labelColorWhite label-size-16 margin-right-20 hover-label cursor-pointer">
-              <Link to="/desencriptar">Desencriptar</Link>
+              <Link to="/desencriptar">Decrypt</Link>
             </div>
             <div className="dropdownHover-profile">
               <div className="width40 icon-profile height80 icon-size-30 icon-align-center cursor-pointer"></div>
@@ -30,7 +30,7 @@ export function TopPage() {
                   </Link>
                   <Link to="/signUp">
                     <div className="grid-1-1 height50 labelColorWhite label-size-16 label-weight-normal cursor-pointer">
-                      Criar Conta
+                      Create Account
                     </div>
                   </Link>
                 </div>
