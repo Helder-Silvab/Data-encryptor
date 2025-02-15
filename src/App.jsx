@@ -11,8 +11,8 @@ function App() {
           <div className="grid-1-1 grid-flex margin-top-80">
             <div className="width700">
               <div className="label-size-40 labelColorGradient label-weight-bold">
-                A codeShield ira encriptar os seus dados com a maior segurança
-                possivel
+                CodeShield will encrypt your data as securely as possible
+                as possible
               </div>
             </div>
             <div className="grid-flex-grow"></div>
@@ -20,16 +20,16 @@ function App() {
           <div className="grid-1-1 grid-flex margin-top-80">
             <div className="grid-1-1">
               <div className="grid-1-1 label-size-18 labelColorWhite label-weight-normal">
-                O que fazemos?
+                What we do?
               </div>
               <div className="width330 label-size-16 labelColorWhite margin-top-20">
-                Encriptamos e desencriptamos{" "}
+                We encrypt and decrypt{" "}
                 <span className="labelColorRed label-weight-normal">
-                  dados, ficheiros e imagens
+                  data, files and images
                 </span>{" "}
-                para conseguir aumentar a sua{" "}
+                to increase its{" "}
                 <span className="labelColorYellow label-weight-normal">
-                  segurança
+                  security
                 </span>
               </div>
             </div>
@@ -37,10 +37,10 @@ function App() {
               <div className="width230 height180 height-reset colorAzulEscuro border-radius-20 padding20 card">
                 <div className="icon-data-card icon-size-70 width70 height70 position-absolute card-image"></div>
                 <div className="grid-1-1 label-size-18 labelColorWhite label-weight-normal align-center margin-top-40">
-                  Dados
+                  Data
                 </div>
                 <div className="grid-1-1 label-size-16 labelColorGray align-center margin-top-20">
-                  Encripte os seus dados sensiveis
+                  Encrypt your sensitive data
                 </div>
               </div>
             </div>
@@ -48,10 +48,10 @@ function App() {
               <div className="width230 height180 height-reset colorAzulEscuro border-radius-20 padding20">
                 <div className="icon-file-card icon-size-70 width70 height70 position-absolute card-image"></div>
                 <div className="grid-1-1 label-size-18 labelColorWhite label-weight-normal align-center margin-top-40">
-                  Ficheiros
+                  Files
                 </div>
                 <div className="grid-1-1 label-size-16 labelColorGray align-center margin-top-20">
-                  Encripte os seus ficheiros importantes
+                  Encrypt your important files
                 </div>
               </div>
             </div>
@@ -59,10 +59,10 @@ function App() {
               <div className="width230 height180 height-reset colorAzulEscuro border-radius-20 padding20">
                 <div className="icon-img-card icon-size-70 width70 height70 position-absolute card-image"></div>
                 <div className="grid-1-1 label-size-18 labelColorWhite label-weight-normal align-center margin-top-40">
-                  Imagens
+                  Images
                 </div>
                 <div className="grid-1-1 label-size-16 labelColorGray align-center margin-top-20">
-                  Encripte as suas imagens signficantes
+                  Encrypt your significant images
                 </div>
               </div>
             </div>
